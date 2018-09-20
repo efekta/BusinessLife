@@ -123,7 +123,7 @@ img {
         font-size: 22px;
     }
     section#main {
-        padding-bottom: 50px;
+        /*padding-bottom: 50px;*/
         height: initial;
     }
     #main .content {

@@ -144,6 +144,7 @@ section#main {
     height: 760px;
     padding-top: 105px;
     position: relative;
+    overflow: hidden;
 }
 #main .row-content {
     display: -webkit-flex;
@@ -221,15 +222,20 @@ section#main {
     /*display: none;
 }
 */
-/*#main .i-speaker-photo img {
-    max-height: 720px;
-    max-width: 550px;
-}*/
 
-/*img {
+#main .i-speaker-photo {
+    height: 550px;
+}
+
+#main .i-speaker-photo img {
+    height: 100%;
+    max-width: none;  
+}
+
+img {
     max-width: 100%;
     height: auto;
-}*/
+}
 #main .suptitle {
     font-family: 'HelveticaNeueCyr-Roman', sans-serif;
     font-size: 26px;
