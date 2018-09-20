@@ -983,9 +983,16 @@ section#bl {
 section#speakers {
     background: url('../images/speakers/bg.jpg') no-repeat;
     height: 708px;
+    overflow: hidden;
     position: relative;
 }
-
+section#speakers .speakers-about {
+    height: 505px;
+}
+section#speakers .speakers-about img {
+    height: 100%;
+    max-width: none;
+}
 #speakers .container {
     position: absolute;
     top: 0;
@@ -1117,7 +1124,7 @@ section#speakers {
 
 section#bonus {
     background: #dadfe1;
-    /*height: 600px;*/
+    height: 600px;
 }
 
 #bonus .get-bonus {
