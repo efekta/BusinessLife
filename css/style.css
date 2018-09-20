@@ -213,17 +213,18 @@ section#main {
     color: #fff;
     text-transform: uppercase;
 }
-#main .photo-block {
+/*#main .photo-block {
     position: relative;
     overflow: hidden;
     height: 720px;
     margin-bottom: 30px;
-    /*display: none;*/
+    /*display: none;
 }
-#main .i-speaker-photo img {
+*/
+/*#main .i-speaker-photo img {
     max-height: 720px;
     max-width: 550px;
-}
+}*/
 
 /*img {
     max-width: 100%;
