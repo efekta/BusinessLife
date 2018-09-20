@@ -765,12 +765,14 @@ section#program {
     padding: 40px;
     position: relative;
     box-shadow: 14px 14px 14px 0px #000000;
+    min-height: 500px;
 }
 #program .program-block.more {
     background: #4fc1f6;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: -10px;
+    min-height: auto;
 }
 #program .program-block.more .program-title {
     font-size: 22px;
