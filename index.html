@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>ГДЕ ИСКАТЬ, КАК ПРИВЛЕЧЬ И УДЕРЖАТЬ СПЕЦИАЛИСТОВ В КОМПАНИИ</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="FonteZ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script type="text/javascript" src="js/jquery.1.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        #get-presentation.modal-thanks .modal-content,
+        #partner-modal.modal-thanks .modal-content {
+            background: #dbdae5;
+            border-radius: 0;
+            padding: 0 50px;
+        }
+          #discount40-modal.modal-thanks .modal-content {
+            background: #dbdae5;
+            border-radius: 0;
+            padding:15px;
+        }
+          
+        #get-presentation .modal .modal-content,
+        #partner-modal .modal .modal-content,
+        #discount40-modal .modal .modal-content {
+            border-radius: 6px;
+        }
+
+        #get-presentation .modal-content,
+        #partner-modal .modal-content,
+        #discount40-modal .modal-content {
+            -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        }
+
+        #get-presentation .form.vertical,
+        #partner-modal .form.vertical,
+        #discount40-modal .form.vertical {
+            
+        }
+
+        #get-presentation .form.vertical .form-row,
+        #partner-modal .form.vertical .form-row,
+        #discount40-modal .form.vertical .form-row {
+            margin-bottom: 40px;
+            
+        }
+
+        #get-presentation .form.vertical .form-row .form-input,
+        #partner-modal .form.vertical .form-row .form-input,
+        #discount40-modal .form.vertical .form-row .form-input {
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+
+        #get-presentation .form.vertical .form-row .form-input input,
+        #partner-modal .form.vertical .form-row .form-input input,
+        #discount40-modal .form.vertical .form-row .form-input input {
+            background: #fff;
+            border: 2px solid #aeaeae;
+            padding: 10px 15px;
+            font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+            font-size: 16px;
+            /* color: #959595; */
+            color: #000;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            outline: 0;
+        }
+
+        #get-presentation .form.vertical .form-buttons,
+        #partner-modal .form.vertical .form-buttons,
+        #discount40-modal .form.vertical .form-buttons {
+            text-align: center;
+        }
+
+        #get-presentation .inside-form,
+        #partner-modal .inside-form,
+        #discount40-modal .inside-form {
+            color: #19b5fe;
+            background-color: #fff;
+        }
+
+        #get-presentation .inside-form:hover,
+        #partner-modal .inside-form:hover,
+        #discount40-modal .inside-form:hover {
+            color: #fff;
+            background-color: #19b5fe;
+        }
+
+        
+
+        #get-presentation input,
+        #partner-modal input,
+        #discount40-modal input {
+            width: 100%;
+            margin: 10px auto;
+            border-radius: 5px;
+            border-color: #19b5fe !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="col-md-3 col-sm-3 col-xs-12 logo">
+                <img src="images/header/logo.png" alt="">
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 date">
+                11 декабря 2018
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12 city">
+                г. Ростов-на-Дону
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 phone">
+                <a class="" href="tel:88633223382">8 (863) 322-33-82</a>
+            </div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="info-line hidden-xs">
+            <div class="container">
+                <ul class="list">
+                    <li class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="item-icon"><img src="images/main/info/1.png" alt=""></div>
+                        <div class="item-title">Теория + ПРАКТИКА</div>
+                    </li>
+                    <li class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="item-icon"><img src="images/main/info/2.png" alt=""></div>
+                        <div class="item-title">Технология подходит для любой сферы бизнеса</div>
+                    </li>
+                    <li class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="item-icon"><img src="images/main/info/3.png" alt=""></div>
+                        <div class="item-title">Гарантия эффективности при условии применения</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="myBnnr businessforum">
+                <div class="bnr-area">
+                    <div class="myBnnr_close" onclick="$('.myBnnr').hide();">+</div>
+                    <div class="myBnnr_body">
+                        <div class="rotate">
+                            <div class="skew_u_guys">
+                                <a href="#" data-toggle="modal" data-target="#discount40-modal" class="blink">Оставить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myBnnr_mibile_body">
+                        <div class="bnr-title">Внимание!</div>
+                        <div class="bnr-subtitle">Возьми друга и получи скидку 50%.<br>Только до 8.08.2018!<br>Успейте купить!</div>
+                        <div class="bnr-button">
+                            <a href="#" data-toggle="modal" data-target="#discount40-modal" class="blink">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-content">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 content">
+                    <div class="suptitle suptitle_blue">
+                        Технология создания отдела продаж за 2 недели и увеличения дохода на 30%</div>
+                    <div class="suptitle">
+                        МАСТЕР-КЛАСС для владельцев
+                    </div>
+                    <div class="title">
+                        Как создать отдел продаж на миллион?
+                    </div>
+                    <div class="subtitle">
+                    </div>
+                    <div class="info-line hidden-sm hidden-md hidden-lg">
+                    
+                        <ul class="list">
+                            <li class="col-md-4 col-sm-12 col-xs-12">
+                                <div class="item-icon"><img src="images/main/info/1.png" alt=""></div>
+                                <div class="item-title">Теория + ПРАКТИКА</div>
+                            </li>
+                            <li class="col-md-4 col-sm-12 col-xs-12">
+                                <div class="item-icon"><img src="images/main/info/2.png" alt=""></div>
+                                <div class="item-title">Технология подходит для любой сферы бизнеса</div>
+                            </li>
+                            <li class="col-md-4 col-sm-12 col-xs-12">
+                                <div class="item-icon"><img src="images/main/info/3.png" alt=""></div>
+                                <div class="item-title">Гарантия эффективности при условии применения</div>
+                            </li>
+                        </ul>
+                </div>
+                    <div class="other">
+                        <button class="button blue for-pres" href="#" data-toggle="modal" data-target="#get-presentation">скачать презентацию</button>
+                        <img src="images/header/forpdf.png" class="fpdf">
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 speaker-box">
+                    <div class="i-speaker-photo">
+                        <img src="images/speakers/about_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="matherials">
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <b>Практические</b> материалы, которые вы получите<br> на мастер-классе:
+                </div>
+                <ul class="list">
+                    <li>Структура воронки Найма (как искать, нанимать, стажировать);</li>
+                    <li>Пример эффективного объявления о найме топ-менеджера;</li>
+                    <li>Скрипт менеджера по персоналу для прозвона соискателей;</li>
+                    <li>Чек-лист для найма топ-менеджера и сотрудника;</li>
+                    <li>Список вопросов на 1-е и 2-е собеседование, для выявления эффективности (уровня компетенции) кандидата;</li>
+                    <li>Перечень пунктов, на что смотрят кандидаты, когда приходят на собеседование;</li>
+                    <li>Чек-лист для прохождения стажировки;</li>
+                    <li>Перечень причин, которые делают сотрудника лояльным к компании;</li>
+                    <li>Положение (Схема) о начислении заработной платы;</li>
+                    <li>Примеры правильного составления регламентов;</li>
+                    <li>Примеры составления блок-схем бизнес-процессов.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="necessity">
+        <div class="container">
+            <div class="needs">
+                <div class="left col-md-6 col-sm-6 col-xs-12">
+                    <div class="title">
+                        Вам необходим этот мастер-класс, если:
+                    </div>
+                    <ul class="list-of-needs">
+                        <li><span>Объем работы растет, а денег все меньше;</span></li>
+                        <li><span>Невозможно от сотрудников добиться выполнения поставленных задач;</span></li>
+                        <li><span>Работать приходится по принципу - «хочешь сделать хорошо, сделай сам»;</span></li>
+                        <li><span>Приказы и распоряжения не приносят результата;</span></li>
+                        <li><span>Кол-во повторяющихся ошибок персонала растет и Ваших нервов уже не хватает.</span></li>
+                    </ul>
+                </div>
+                <div class="right col-md-6 col-sm-6 col-xs-12">
+                    <div class="we-know">
+                        <div class="title">Можно разорвать этот порочный круг!</div>
+                    </div>
+                    <img src="images/necessity/bg.png" alt="">
+                </div>
+            </div>
+            
+            <form class="form gorizontal dark" id="necessity_form">
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="text" class="form-name" name="name" placeholder="имя" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="phone" class="form-phone" name="phone" placeholder="телефон" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="email" class="form-email" name="email" placeholder="e-mail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-button">
+                        <button class="button blue" type="submit" id="Форма узнать подробнее">УЗНАТЬ ПОДРОБНЕЕ</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="program">
+        <div class="container">
+            <img src="images/program/blank.png" alt="" class="blank">
+            <div class="title">ПРОГРАММА МАСТЕР-КЛАССА</div>
+            <div class="program-info">
+                <div class="left col-md-6 col-sm-12 col-xs-12">
+                    <div class="program-block">
+                        <div class="program-num">1</div>
+                        <div class="program-title">НАЙМ: Как создать очередь кандидатов в продавцы?</div>
+                        <ul class="info-list">
+                            <li>Как написать продающее объявление, чтобы шли только к вам;</li>
+                            <li>Пошаговые действия менеджера по персоналу, чтобы создать очередь из кандидатов;</li>
+                            <li>Почему кандидаты не интересуются вашей компанией;</li>
+                            <li>Где искать и как привлечь сильных продавцов или руководителя отдела продаж (РОП);</li>
+                            <li>Как директору не быть «попугаем» и не повторять одно и тоже каждому стажеру.</li>
+                        </ul>
+                    </div>
+                    <div class="program-block">
+                        <div class="program-num">2</div>
+                        <div class="program-title">СТАЖИРОВКА: Как быстро подготовить нового продавца?</div>
+                        <ul class="info-list">
+                            <li>Стажировка 3 месяца или 3 недели. Как увеличить скорость адаптации;</li>
+                            <li>Технология быстрого обучения и наставничества для стажеров;</li>
+                            <li>Ошибки, из-за которых, часто уходят перспективные продажники;</li>
+                            <li>Как распознать на стажировке лентяя, если пропустили на этапе собеседования;</li>
+                            <li>Как директору не быть «попугаем» и не повторять одно и тоже каждому стажеру.</li>
+                        </ul>
+                    </div>
+                    <div class="program-block more hidden-sm hidden-xs">
+                        <div class="program-title">Дополнительный бонус от<br> мастер-класса</div>
+                        <ul class="info-list">
+                            <li>Вы посетите одну из <b>крупнейших рекламных компаний юга России</b>, которая работает по нашей технологии и увидите <b>реальные результаты</b>!</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="right col-md-6 col-sm-12 col-xs-12">
+                    <div class="program-block">
+                        <div class="program-num">3</div>
+                        <div class="program-title">УПРАВЛЕНИЕ: Как владельцу управлять отделом продаж?</div>
+                        <ul class="info-list">
+                            <li>Как подготовить РОПа;</li>
+                            <li>Чем должен заниматься РОП;</li>
+                            <li>Что делать, если доход просел;</li>
+                            <li>Как поднять доход (пошаговая инструкция);</li>
+                            <li>Как увеличить средний чек и конверсию в продажу;</li>
+                            <li>Система тренировок и обучения продавцов, которая удвоит ваш доход;</li>
+                            <li>Почему «крутые» продавцы перестают продавать.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="program-block">
+                        <div class="program-num">4</div>
+                        <div class="program-title">АНАЛИТИКА: Как держать продажи под контролем?</div>
+                        <ul class="info-list">
+                            <li>Как предугадать падение дохода и заранее исправить ситуацию;</li>
+                            <li>Какие отчетности должен получать РОП, а какие владелец, чтобы понимать, что происходит в отделе продаж;</li>
+                            <li>Как работать с CRM, чтобы не один клиент не исчез с «поля зрения»;</li>
+                            <li>Стратегии развития и структура отдела продаж;</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-block more hidden-md hidden-lg">
+                        <div class="program-title">Дополнительный бонус от<br> мастер-класса</div>
+                        <ul class="info-list">
+                            <li>Вы посетите одну из <b>крупнейших рекламных компаний юга России</b>, которая работает по нашей технологии и увидите <b>реальные результаты</b>!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form class="form gorizontal light" id="program-form">
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="text" class="form-name" name="name" placeholder="имя" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="phone" class="form-phone" name="phone" placeholder="телефон" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="email" class="form-email" name="email" placeholder="e-mail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-button">
+                        <button class="button blue" type="submit" id="Форма принять участие">ПРИНЯТЬ УЧАСТИЕ</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section id="bonus">
+        <div class="container">
+            <div class="get-bonus">
+                <div class="left col-md-5 col-sm-5 col-xs-12">
+                    <img src="images/bonus/box.png" alt="" class="bonus-box tossing">
+                </div>
+                <div class="right col-md-7 col-sm-7 col-xs-12">
+                    <div class="title">Получите подарок от спикера</div>
+                    <div class="subtitle">
+                        Для того, чтобы вы понимали насколько <b>полезные инструменты</b> Вы получите на мероприятии, <b>мы направим Вам небольшую их часть</b> прямо сейчас на почту!
+                    </div>
+                    <div class="bonus-bottom">
+                        <form class="form vertical dark" id="instuments_form">
+                            <div class="form-row">
+                                <div class="form-input">
+                                    <input type="text" class="form-name" name="name" placeholder="имя" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-input">
+                                    <input type="phone" class="form-phone" name="phone" placeholder="телефон" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-input">
+                                    <input type="email" class="form-email" name="email" placeholder="e-mail" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-button">
+                                    <button class="button blue" type="submit" id="Форма получить инструменты">ПОЛУЧИТЬ ИНСТРУМЕНТЫ</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="you-get">
+                            <div class="top-icons-row">
+                                <div class="zip">
+                                    <img src="images/bonus/zip.png" alt="">
+                                </div>
+                                <div class="text">
+                                    ВЫ Получите архив ZIP (124 МБ)
+                                </div>
+                            </div>
+                            <div class="icons-row">
+                                <div class="pdf"><img src="images/bonus/pdf.png" alt=""></div>
+                                <div class="xls"><img src="images/bonus/xls.png" alt=""></div>
+                                <div class="doc"><img src="images/bonus/doc.png" alt=""></div>
+                                <div class="txt"><img src="images/bonus/txt.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="info-title">ПОЛУЧИТЕ БОНУСЫ ОТ СПИКЕРОВ МАСТЕР-КЛАССА:</div>
+                    <ul>
+                        <li>+ За быструю оплату Вы получите <b>в ПОДАРОК</b> PDF инструкцию: «Как привлекать на собеседование 100 кандидатов в неделю».</li>
+                        <li>+ За регистрацию и посещение Вы получите <b>в подарок</b> 16-ти часовой видеокурс "Как нанимать, не испытывая разочарований"!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="speakers">
+        <div class="container">
+            <div class="title">спикер мастер-класса - предприниматель-практик</div>
+            <div class="subtitle">Опыт которого - <span>не один год успешного построения собственного бизнеса</span> и <span>консультирования крупных российских компаний</span></div>
+            <div class="speakers-about">
+                <img src="images/speakers/about_1.png" alt="">
+                <div class="speaker left">
+                    <img class="hidden visible-xs speaker-photo" src="images/speakers/1.png" alt="">
+                    <div class="speaker-name">СЕРГЕЙ ШУШИН</div>
+                    <div class="line"></div>
+                    <ul class="speaker-info">
+                        <li>Совладелец группы компаний, со штатом сотрудников 250 чел.;</li>
+                        <li>Эксперт в области продаж, найма, мотивации, управления персоналом;</li>
+                        <li>Управляющий консалтинговой компании Вusiness Life;</li>
+                        <li>Профессиональный спортсмен, участник Олимпийских игр;</li>
+                        <li>Установил 2 рекорда Гиннесса и 1 рекорд России;</li>
+                        <li>Лично создал с нуля 15 отделов продаж;</li>
+                        <li>Совокупный оборот консультируемых компаний 1 млрд.$;</li>
+                        <li>Имеет награду от губернатора Ростовской области;</li>
+                        <li>Соавтор самого большого на юге России ежегодного спортивного фестиваля «дети в спорт», по итогу которого за 2014 - 2017 г. в спортивные секции записалось более 10 000 детей.</li>
+                    </ul>
+                </div>
+                <div class="speaker right">
+                    <img class="hidden visible-xs speaker-photo" src="images/speakers/2.png" alt="">
+                    <div class="speaker-name">МАРАТ САИД-ГАЛИЕВ</div>
+                    <div class="line"></div>
+                    <ul class="speaker-info">
+                        <li>Практикующий консультант, предприниматель, в портфолио которого 70+ успешно реализованных консалтинговых проектов;</li>
+                        <li>Лично разрабатывал и внедрял структуру и бизнес-процессы в компании с кол-вом сотрудников 37.000 человек;</li>
+                        <li>Вытаскивал с самого дна несколько бизнесов с долгами более 8 млн$;</li>
+                        <li>Автор собственных практических, образовательных и консалтинговых программ;</li>
+                        <li>Результатом его программ является увеличение рентабельности предприятия на 7% и валового дохода от 16%;</li>
+                        <li>Совокупный оборот консультируемых компаний 10 млрд.$.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <div class="title">
+                Отзывы участников о посещении мастер-класса
+            </div>
+            <div id="reviewsSlider" class="new carousel carousel-fade slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#reviewsSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#reviewsSlider" data-slide-to="1"></li>
+                    <li data-target="#reviewsSlider" data-slide-to="2"></li>
+                    <li data-target="#reviewsSlider" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="review">
+                            <div class="left col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Божаров Юрий Юрьевич</div>
+                                <div class="review-subtitle">До</div>
+                                <div class="review-text">
+                                    До захода на программу компании BUSINESS LIFE я не испытывал особых проблем в бизнесе. Был стабильный доход, который позволял жить. Хотелось просто получить информацию по управлению, администрированию и упорядочиванию.
+                                </div>
+                            </div>
+                            <div class="right col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Компания «Авантаж»</div>
+                                <div class="review-subtitle">После</div>
+                                <div class="review-text">
+                                    После прохождения программы у меня появилось чёткое видение, как развиваться дальше, которое теперь выраженоне на уровне ощущений, а виде сформулированного плана действий. Появились новые проекты, увеличился штат сотрудников. Знания, как правильно расставлять сотрудников на посты и быстро вводить в должность, позволили наладить найм. Теперь каждый сотрудник, в том числе и новый, знает, что он должен делать, и может быстро приступить к выполнению своих обязанностей. Слаженная деятельность всей команды привела к тому, что в августе 2017 года значительно выросли прибыль компании и личный доход по сравнению с предыдущим годом. На текущий момент времени маржинальность увеличилась в 2,5 раза. Теперь мы не просто живём, а развиваемся!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review">
+                            <div class="left col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Буйновский Борис Александрович</div>
+                                <div class="review-subtitle">До</div>
+                                <div class="review-text">
+                                    Как и любой владелец я хотел развивать компанию и двигаться дальше, но это всё было на уровне «хочу, чтобы было хорошо». У меня не было понимания, чего я хочу и куда необходимо двигаться. Также не было понимания, какие сотрудники мне нужны и какие функции они должны выполнять. Потому нет ничего удивительного, что это отразилось также на работе сотрудников. Одной из самых сложных для меня областей, была область найма. Я не мог уверенно проводить собеседования, так как понимал, что могу что-то не то спросить. И конечно, это очень сильно сказывалось на самом найме сотрудников.
+                                </div>
+                            </div>
+                            <div class="right col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Компания «Статус»</div>
+                                <div class="review-subtitle">После</div>
+                                <div class="review-text">
+                                    После прохождения программы у меня полностью пропала неуверенность перед собеседованием новых сотрудников, даже если это HR, мне легко общаться с новыми сотрудниками. У меня есть научно обоснованные «рычаги», которые позволяют объяснить, почему структура компании должна выглядеть именно так. Но самое главное, я теперь точно знаю, в каких областях у меня есть пробелы и как с ними можно справиться. У меня в бизнесе три направления: одно основное и два поменьше. По маленьким направлениям в 2016 году я превысил замысел. По основному – немного не дошёл, но я знаю, где были основные препятствия и как их можно преодолеть! Сейчас у меня есть понимание, в каком направлении двигаться и развиваться.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review">
+                            <div class="left col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Алексеюк Кирилл Юрьевич</div>
+                                <div class="review-subtitle">До</div>
+                                <div class="review-text">
+                                    До того, как я начал проходить программу в компании Business Life, у меня был один бизнес – отель «Абаго». И продавали только гостиничные номера. Доход меня устраивал, но я чувствовал, что в бизнесе могу сделать гораздо больше, чем сейчас. У меня была куча идей, которые я всё никак не мог реализовать, так как всё приходилось тащить на себе, и времени на всё просто не хватало.
+                                </div>
+                            </div>
+                            <div class="right col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Отель «Абаго»</div>
+                                <div class="review-subtitle">После</div>
+                                <div class="review-text">
+                                    Сейчас у меня три бизнеса. Мы продаём не только гостиничные номера, но и другие услуги: кейтеринг, экскурсии, квесты, рафтинг и так далее. В том числе и для масштабных мероприятий с участием иностранных гостей. Благодаря тому, что я обладаю знаниями и навыками построения чёткого бизнес-процесса и управления бизнесом, я смог грамотно расставить всех сотрудников, штат которых увеличился в три раза, на посты, правильно делегировать им задачи. Теперь я не вмешиваюсь в оперативное управление, а появившееся свободное время трачу туда, куда сам посчитаю нужным.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review">
+                            <div class="left col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Курдин Михаил</div>
+                                <div class="review-subtitle">До</div>
+                                <div class="review-text">
+                                     Я пришел с тем, что не знал, как выстроить структуру небольшой организации, сделать бизнес более управляемым, так, чтобы не погружаться в рутину неотложных дел, причём зачастую завершая или переделывая работу сотрудников.
+                                </div>
+                            </div>
+                            <div class="right col-md-6 col-sm-6 col-xs-12">
+                                <div class="review-title bb-left">Компания «СанТехЮг»</div>
+                                <div class="review-subtitle">После</div>
+                                <div class="review-text">
+                                    Мы выстроили структуру компании, увеличили штат в два раза (36 человек), отказались от универсальных специалистов и, самое главное, нам не просто достаточно средств на содержание штата, а с помощью этих преобразований, мы увеличили прибыль более чем на 40%.<br>
+                                    Этих результатов мы добились благодаря качеству людей, которых нам удалось привлечь в компанию.<br> 
+                                    Также мы создали новую среду обитания для своих сотрудников. благодаря применению системы статистик сотрудники находятся в безопасности от необоснованной критики со стороны начальства, в компании нет интриг, нет любимчиков. Выводы о работе каждого сотрудника делаются на основе его статистики. У каждого сотрудника есть чёткое понимание своих обязанностей.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#reviewsSlider" role="button" data-slide="prev"></a>
+                    <a class="right carousel-control" href="#reviewsSlider" role="button" data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="partners">
+        <div class="container">
+            <div class="title">партнеры мероприятия</div>
+            <ul class="partners-list">
+                <div class="list-row">
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/ds.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/geometria.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/rusmedia.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/rabota.ru.jpg" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/pulscen.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/rg.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/hh.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/dinda.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/sn.png" alt=""></li>
+                    <li class="partner col-lg-2 col-md-2 col-sm-4 col-6"><img src="images/partners/sinko.jpg" alt=""></li>
+                </div>
+            </ul>
+            <div class="partners-button">
+                <button class="button small blue" data-toggle="modal" data-target="#partner-modal" class="partnership">стать партнером</button>
+            </div>
+        </div>
+    </section>
+    <section id="bl">
+        <div class="container">
+            <div class="about">
+                <div class="left col-md-6 col-sm-4 col-xs-12">
+                    <img src="images/bl/logo.png" alt="">
+                </div>
+                <div class="right col-md-6 col-sm-8 col-xs-12">
+                    <ul class="info-list">
+                        <li>BUSINESS LIFE - ЭТО ОДНА ИЗ КРУПНЕЙШИХ КОНСАЛТИНГОВЫХ КОМПАНИЙ В РОССИИ;</li>
+                        <li>С 2009 ГОДА В BUSINESS LIFE ПРОШЛИ ОБУЧЕНИЕ СВЫШЕ 20 000 ПРЕДПРИНИМАТЕЛЕЙ СО ВСЕЙ РОССИИ;</li>
+                        <li>РЕЗУЛЬТАТЫ НАШИХ КЛИЕНТОВ - ЭТО УВЕЛИЧЕНИЕ ПРИБЫЛИ ОТ 30% ДО 200% И УМЕНЬШЕНИЕ ВРЕМЕНИ РАБОТЫ ВЛАДЕЛЬЦА С 60 ДО 30 ЧАСОВ В НЕДЕЛЮ.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="speakers">
+                <div class="title">​С нами работают самые известные спикеры в своих областях</div>
+                <ul class="speakers-list">
+                    <li class="speaker col-md-3 col-sm-3 col-xs-6">
+                        <div class="speaker-photo"><img src="images/bl/1.png" alt=""></div>
+                        <div class="speaker-name">Владимир Соловьев</div>
+                    </li>
+                    <li class="speaker col-md-3 col-sm-3 col-xs-6">
+                        <div class="speaker-photo"><img src="images/bl/2.png" alt=""></div>
+                        <div class="speaker-name">​Павел Астахов</div>
+                    </li>
+                    <li class="speaker col-md-3 col-sm-3 col-xs-6">
+                        <div class="speaker-photo"><img src="images/bl/3.png" alt=""></div>
+                        <div class="speaker-name">​Владимир Туров</div>
+                    </li>
+                    <li class="speaker col-md-3 col-sm-3 col-xs-6">
+                        <div class="speaker-photo"><img src="images/bl/5.png" alt=""></div>
+                        <div class="speaker-name">Брайан Трейси</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="map">
+        <div class="map-block col-md-4 col-sm-12 col-xs-12">
+            <div class="title">ДАТА И МЕСТО ПРОВЕДЕНИЯ</div>
+            <div class="date">16-18 августа</div>
+            <div class="location">
+                РОСТОВ-НА-ДОНУ, ул. Береговая 8
+                <br> Бизнес-центр «Риверсайд-Дон»
+                <br> 4 этаж, оф. 407
+            </div>
+            <form class="form vertical light" id="map_form">
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="text" class="form-name" name="name" placeholder="имя" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="phone" class="form-phone" name="phone" placeholder="телефон" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="email" class="form-email" name="email" placeholder="e-mail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-button">
+                        <button class="button blue" type="submit" id="Форма принять участие с карты">ПРИНЯТЬ УЧАСТИЕ</button>
+                    </div>
+                </div>
+            </form>
+            <ul class="social">
+                <li class="facebook"><a target="_blank" href="https://www.facebook.com/bizlife.rnd"></a></li>
+                <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCRv48CXPUolj8mIpFm8JYwQ"></a></li>
+                <li class="vk"><a target="_blank" href="https://vk.com/bs_life"></a></li>
+                <li class="instagram"><a target="_blank" href="https://www.instagram.com/biznlife/"></a></li>
+            </ul>
+        </div>
+        <div id="map-bg" class="col-md-8 col-sm-12 col-xs-12">
+        </div>
+    </section>
+    <footer>
+        <div class="col-md-4 col-sm-4 col-xs-12 logo">
+            <img src="images/footer/logo.png" alt="">
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 policy">
+            <a href="#" data-toggle="modal" data-target="#policy">Политика конфиденциальности</a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 info">
+            <a class="" href="tel:88633223382">8 (863) 322-33-82</a>
+            <a href="http://www.biznlife.ru" target="_blank">www.biznlife.ru</a>
+        </div>
+    </footer>
+    <div id="thanks" class="modal modal-thanks fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="modal-body">
+                    <div class="header">
+                        <div class="title">
+                            СПАСИБО ЗА ОБРАЩЕНИЕ!
+                        </div>
+                        <hr>
+                        <div class="subtitle">
+                            Наш менеджер свяжется с Вами в ближайшее время, для уточнения деталей.
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="images/modal/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="policy" class="modal modal-policy fade" role="dialog">
+        <div class="container">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                    <div class="modal-body">
+                        <div class="header">
+                            <div class="title">УСЛОВИЯ И ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
+                            <hr>
+                            <div class="small-title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
+                            <p>Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернет по возможности была максимально приятной и полезной, и Вы совершенно спокойно использовали широчайший спектр информации, инструментов и возможностей, которые предлагает Интернет. Личная информация Членов, собранная при регистрации (или в любое другое время) преимущественно используется для подготовки Продуктов или Услуг в соответствии с Вашими потребностями. Ваша информация не будет передана или продана третьим сторонам. Однако мы можем частично раскрывать личную информацию в особых случаях, описанных в «Согласии с рассылкой».</p>
+                            <div class="small-title">С КАКОЙ ЦЕЛЬЮ СОБИРАЮТСЯ ЭТИ ДАННЫЕ</div>
+                            <p>Имя используется для обращения лично к вам, а ваш e-mail для отправки вам писем рассылок, новостей тренинга, полезных материалов, коммерческих предложений. Вы можете отказаться от получения писем рассылки и удалить из базы данных свои контактные данные в любой момент, кликнув на ссылку для отписки, присутствующую в каждом письме.</p>
+                            <div class="small-title">КАК ЭТИ ДАННЫЕ ИСПОЛЬЗУЮТСЯ</div>
+                            <p>На сайте используются куки (Cookies) и данные о посетителях сервиса Google Analytics. При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей. Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом.</p>
+                            <div class="small-title">КАК ЭТИ ДАННЫЕ ЗАЩИЩАЮТСЯ</div>
+                            <p>Для защиты Вашей личной информации мы используем разнообразные административные, управленческие и технические меры безопасности. Наша Компания придерживается различных международных стандартов контроля, направленных на операции с личной информацией, которые включают определенные меры контроля по защите информации, собранной в Интернет. Наших сотрудников обучают понимать и выполнять эти меры контроля, они ознакомлены с нашим Уведомлением о конфиденциальности, нормами и инструкциями. Тем не менее, несмотря на то, что мы стремимся обезопасить Вашу личную информацию, Вы тоже должны принимать меры, чтобы защитить ее. Мы настоятельно рекомендуем Вам принимать все возможные меры предосторожности во время пребывания в Интернете. Организованные нами услуги и веб-сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем. Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций.</p>
+                            <p>В случае изменения данной политики конфиденциальности вы сможете прочитать об этих изменениях на этой странице или, в особых случаях, получить уведомление на свой e-mail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="get-presentation" class="modal modal-thanks modal-ticket fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="header">
+                    <div class="title" style="margin-top: 20px;">
+                        Заполните данные
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <div class="header">
+                            <div class="form vertical">
+                                <form id="presentation-form">
+                                    <div class="form-row">
+                                        <div class="form-input">
+                                            <input type="text" autocomplete="off" name="name" class="form-name" placeholder="Ваше имя" required="required">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="form-input">
+                                            <input type="text" autocomplete="off" name="phone" required="required" class="form-phone" placeholder="Ваш телефон">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="form-input">
+                                            <input type="email" autocomplete="off" name="email" required="required" class="form-email" placeholder="Ваш e-mail">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-buttons">
+                                        <button class="button blue inside-form" type="submit" id="Форма скачать презентацию">скачать презентацию</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="partner-modal" class="modal modal-thanks modal-ticket fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <div class="header">
+                    <div class="title" style="margin-top: 20px;">
+                        Заполните данные
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <div class="header">
+                            <div class="form vertical">
+                                <form id="partner-form onsubmit=" yaCounter47142042.reachGoal( 'ORDER_LP'); return true; ">
+                                    <div class="form-row ">
+                                        <div class="form-input ">
+                                            <input type="text " autocomplete="off " name="name " class="form-name " placeholder="Ваше имя " required="required ">
+                                        </div>
+                                        <div class="clearfix "></div>
+                                        <div class="form-input ">
+                                            <input type="text " autocomplete="off " name="phone " required="required " class="form-phone " placeholder="Ваш телефон ">
+                                        </div>
+                                        <div class="clearfix "></div>
+                                        <div class="form-input ">
+                                            <input type="email " autocomplete="off " name="email " required="required " class="form-email " placeholder="Ваш e-mail ">
+                                        </div>
+                                        <div class="clearfix "></div>
+                                    </div>
+                                    <div class="form-buttons ">
+                                        <button class="button blue inside-form " type="submit " id="partnership ">Стать партнером</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="discount40-modal" class="modal modal-thanks modal-ticket fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button " class="close " data-dismiss="modal"></button>
+                <div class="header">
+                    <div class="title" style="margin-top: 20px;">
+                       Внимание!<br/>Осталось 5 мест!<br/>Успейте купить билет!
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <div class="header">
+                            <div class="form vertical">
+                                <form id="partner-form>
+                                    <div class="form-row">
+                                        <div class="form-input">
+                                            <input type="text" autocomplete="off" name="name" class="form-name" placeholder="Ваше имя" required="required">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="form-input">
+                                            <input type="text" autocomplete="off" name="phone" required="required" class="form-phone" placeholder="Ваш телефон">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="form-input">
+                                            <input type="email" autocomplete="off" name="email" required="required" class="form-email" placeholder="Ваш e-mail">
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="form-buttons">
+                                        <button class="button blue inside-form" type="submit" id="partnership">Оставить заявку</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <!-- ############## Map ############## -->
+    <script>
+    function initMap() {
+        var myLatLng = { lat: 47.2125353, lng: 39.7053375 };
+        var cntr = { lat: 47.2125353, lng: 39.7053375 };
+        var map = new google.maps.Map(document.getElementById('map-bg'), {
+            zoom: 19,
+            center: myLatLng,
+            disableDefaultUI: true
+        });
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'БЦ Риверсайд-Дон'
+        });
+        var contentString = '<div id="content"><h1>БЦ «Риверсайд-Дон»</h1></div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        infowindow.open(map, marker);
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHAmTlBQxyVe23j4OohsAsQre9nXrfyKA&callback=initMap">
+    </script>
+    <div class="fontez" style="display: none;">
+        Developed by <a href="https://vk.com/fontez">FonteZ</a>
+    </div>
+</body>
+
+</html>
