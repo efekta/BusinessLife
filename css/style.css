@@ -2199,12 +2199,62 @@ section#reviews {
 }
 
 
-section#main {
+section.main {
     /* background: linear-gradient(to right, #0b0d10 30%, #293038); */
     background: url(../images/main/bg.jpg) no-repeat top center;
     /* height: 800px; */
     height: 760px;
     padding-top: 105px;
     position: relative;
-    overflow: hidden;
+}
+.main .row-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+.main .suptitle {
+    font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+    font-size: 26px;
+    line-height: 31px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.main .title {
+    font-family: 'OfficinaSerifC-Bold', sans-serif;
+    font-size: 37px;
+    line-height: 42px;
+    color: #19b5fe;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.main .video-block {
+    margin-top: 30px;
+}
+.main .video-block .video {
+    width: 100%;
+    height: 307px;
+    margin-bottom: 30px;
+    position: relative;
+    background: #000;
+}
+.main .video-block iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.main .video-block .video-title {
+    font-family: OfficinaSerifC, sans-serif;
+    font-size: 28px;
+    line-height: 31px;
+    color: #fff;
+    text-transform: uppercase;
 }
