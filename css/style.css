@@ -2199,3 +2199,12 @@ section#reviews {
 }
 
 
+section#main {
+    /* background: linear-gradient(to right, #0b0d10 30%, #293038); */
+    background: url(../images/main/bg.jpg) no-repeat top center;
+    /* height: 800px; */
+    height: 760px;
+    padding-top: 105px;
+    position: relative;
+    overflow: hidden;
+}
