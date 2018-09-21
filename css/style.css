@@ -944,7 +944,7 @@ section#bl {
 
 #bl .speakers {
     margin-bottom: 60px;
-    display: table;
+    /*display: table;*/
     width: 100%;
 }
 
@@ -993,13 +993,13 @@ section#speakers .speakers-about img {
     height: 100%;
     max-width: none;
 }
-#speakers .container {
+/*#speakers .container {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
+}*/
 
 #speakers .title {
     font-family: 'OfficinaSerifC-Bold', sans-serif;
@@ -1028,17 +1028,19 @@ section#speakers .speakers-about img {
 }
 
 #speakers .speakers-about {
-    text-align: center;
+/*    text-align: center;
     position: absolute;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 0;*/
+    display: flex;
+    justify-content: space-between;
 }
 
-#speakers .speakers-about .speaker {
+/*#speakers .speakers-about .speaker {
     position: absolute;
     bottom: 0;
-}
+}*/
 
 #speakers .speakers-about .speaker .speaker-name {
     font-family: 'HelveticaNeueCyr-Bold', sans-serif;
@@ -1050,6 +1052,7 @@ section#speakers .speakers-about img {
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
+    /*w100%*/
 }
 
 #speakers .speakers-about .speaker .speaker-info li {
@@ -1064,27 +1067,30 @@ section#speakers .speakers-about img {
 }
 
 #speakers .speakers-about .speaker.left {
-    left: 0;
+/*    left: 0;
     bottom: 70px;
     text-align: right;
-    width: 34%;
+    width: 34%;*/
+    width: 50%;
+    position: relative;
 }
 
 #speakers .speakers-about .speaker.left .speaker-name {
     position: relative;
+    width: 100%;
 }
 
 #speakers .speakers-about .speaker .line {
     background: #19b5fe;
-    width: 150px;
+    width: 295px;
     height: 2px;
     position: absolute;
 }
 
 #speakers .speakers-about .speaker.left .line {
-    right: -113px;
-    top: 93px;
-    transform: rotate(60deg);
+    right: -252px;
+    top: 133px;
+    transform: rotate(45deg);
 }
 
 #speakers .speakers-about .speaker .line:before {
@@ -1101,10 +1107,11 @@ section#speakers .speakers-about img {
 }
 
 #speakers .speakers-about .speaker.right {
-    right: 0;
+/*    right: 0;
     text-align: left;
-    bottom: 55px;
-    width: 31%;
+    bottom: 55px;*/
+    width: 50%;
+    text-align: center;
 }
 
 #speakers .speakers-about .speaker.right .line {
@@ -1258,7 +1265,7 @@ section#map {
 
 #map .map-block {
     background: linear-gradient(to right, #0b0d10 30%, #293038);
-    padding: 90px 30px;
+    padding: 20px 30px;
     z-index: 999;
     height: 708px;
 }
@@ -1270,7 +1277,9 @@ section#map {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-
+#map .map-block .title-time, #map .map-block .date-time {
+    font-size: 24px;
+}
 #map .map-block .date,
 #map .map-block .location {
     font-family: 'HelveticaNeueCyr-Roman', sans-serif;
@@ -2166,3 +2175,30 @@ section#reviews {
 #calendarSlider .carousel-control.right {
     background: url(../images/reviews/arrow.png) center no-repeat
 }
+.speakers-slide_item {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+.speakers .slick-slider .slick-track, .slick-slider .slick-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.speakers .slick-slide {
+    margin: 0 20px;
+}
+.speakers .slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*img {
+    max-width: none;
+    height: 100%;
+    width: 100%;
+}*/
