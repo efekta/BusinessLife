@@ -2258,3 +2258,142 @@ section.main {
     color: #fff;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    section.main {
+    padding-top: 30px;
+    height: initial;
+    text-align: center;
+    }
+    section.main {
+    background: linear-gradient(to right, #0b0d10 30%, #293038);
+    }
+    .main .row-content {
+    display: block;
+    width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 991px) {
+.main .content {
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .title {
+    font-size: 34px;
+    line-height: 39px;
+}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .title {
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-order: 1;
+    -o-order: 1;
+    order: 1;
+}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .suptitle {
+    margin-top: 30px;
+    font-family: HelveticaNeueCyr-Bold, sans-serif;
+}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .suptitle, .main .subtitle {
+    font-size: 24px;
+    line-height: 29px;
+}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .suptitle {
+    -webkit-order: 2;
+    -moz-order: 2;
+    -ms-order: 2;
+    -o-order: 2;
+    order: 2;
+    width: 100%;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .other {
+    -webkit-order: 4;
+    -moz-order: 4;
+    -ms-order: 4;
+    -o-order: 4;
+    order: 4;
+    width: 100%;
+}
+}
+/*@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .info-line .hidden-sm .hidden-md .hidden-lg {
+    display: none;
+}
+}*/
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+.main .info-line {
+    -webkit-order: 4;
+    -moz-order: 4;
+    -ms-order: 4;
+    -o-order: 4;
+    order: 4;
+    padding: 30px 0;
+}
+}
+.main .info-line {
+    background: rgba(0,0,0,.7);
+    padding: 15px 0;
+}
+@media only screen and (max-width: 991px) {
+#main .info-line ul {
+    display: block;
+    width: 100%;
+}
+}
+#main .info-line ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.main .info-line ul li .item-title {
+    font-family: OfficinaSerifC, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #19b5fe;
+    text-transform: uppercase;
+}
+.main .info-line ul li .item-icon {
+    margin-right: 15px;
+    min-width: 50px;
+    width: 50px;
+    max-width: 50px;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px)  {
+.main .info-line ul li .item-icon {
+    margin: auto;
+    margin-bottom: 15px;
+/*    width: 100%;
+    min-width: initial;
+    max-width: initial;*/
+    width: 100%;
+    max-width: none;
+}
+}

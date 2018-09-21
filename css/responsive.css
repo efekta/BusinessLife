@@ -571,6 +571,7 @@ img {
     #program .program-block {
         margin-bottom: 50px !important;
         padding: 30px;
+        min-height: auto;
     }
     #program .program-block .program-title {
         font-size: 16px;
