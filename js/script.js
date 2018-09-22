@@ -53,6 +53,7 @@ $('form').submit(function(e) {
 
 var geo_url = '';
 function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;}
+console.log('postData');
 function run_geo(geo_url){
     $.ajax({type: 'GET',url: geo_url,dataType: 'xml',
         success: function(xml) {$(xml).find('ip').each(function(){
@@ -152,34 +153,6 @@ function go_cookies(form_id) {
     setCookie('form-phone', $('#' + form_id + ' input.form-phone').val(), 365);
 }
 
-// $(document).ready(function() {
-//     $(".owl-carousel").owlCarousel({
-//         loop: true,
-//         margin: 10,
-//         animateIn: 'fadeIn',
-//         animateOut: 'fadeOut',
-//         responsiveClass: true,
-//         navText: ["<i class='slide-left'></i>", "<i class='slide-right'></i>"],
-//         responsive: {
-//             0: {
-//                 items: 1,
-//                 nav: true
-//             },
-//             600: {
-//                 items: 3,
-//                 nav: false
-//             },
-//             1000: {
-//                 items: 3,
-//                 nav: true,
-//             }
-//         }
-//     });
-    // $('input[name="phone"]').mask("+7(999) 999-9999");
-    // console.log('Developed by FonteZ');
-
-
-// });
 
 var lm_modal = getCookie("lm-order-modal");
 if (lm_modal == 'undefined' || lm_modal == '') {
@@ -232,4 +205,9 @@ $(window).load(function() {
     $("input.form-surname").val(getCookie("form-surname"));
     $("input.form-email").val(getCookie("form-email"));
     $("input.form-phone").val(getCookie("form-phone"));
+});
+
+$('.mybtn_close').on('click', function(event) {
+	// event.preventDefault();
+	$('div.sended.hidden').toggleClass('sended-hidden_hide ');
 });

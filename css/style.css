@@ -474,7 +474,7 @@ form.vertical .form-row {
 }
 
 form.vertical .form-row:not(:last-child) .form-input {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 form.vertical .form-row:last-child .form-button {
@@ -990,8 +990,8 @@ section#speakers .speakers-about {
     height: 505px;
 }
 section#speakers .speakers-about img {
-    height: 100%;
-    max-width: none;
+    height: auto;
+    max-width: 100%;
 }
 /*#speakers .container {
     position: absolute;
@@ -1265,7 +1265,7 @@ section#map {
 
 #map .map-block {
     background: linear-gradient(to right, #0b0d10 30%, #293038);
-    padding: 20px 30px;
+    padding: 25px 30px;
     z-index: 999;
     height: 708px;
 }
@@ -1275,7 +1275,7 @@ section#map {
     font-size: 30px;
     color: #19b5fe;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 #map .map-block .title-time, #map .map-block .date-time {
     font-size: 24px;
@@ -2391,10 +2391,81 @@ section.main {
 .main .info-line ul li .item-icon {
     margin: auto;
     margin-bottom: 15px;
-/*    width: 100%;
-    min-width: initial;
-    max-width: initial;*/
     width: 100%;
     max-width: none;
+    }
 }
+
+
+/*
+forms
+*/
+form .hidden {
+    display: block !important;
+}
+form {
+    position: relative;
+}
+
+form .sended.hidden {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    min-height: 170px;
+    padding: 30px;
+    color: #293038;
+    font-family: 'HelveticaNeueCyr-Light', sans-serif;
+    background: #fff;
+    border: 2px solid #19b5fe;
+    z-index: 999;
+}
+form .sended-title {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26px;
+    color: red;
+}
+form .sended-subtitle {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+.mybtn_close {
+    font-family: Arial;
+    border-radius: 50%;
+    background-color: #19b5fe; 
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+form .sended-hidden_hide {
+    display: none !important;
+}
+
+#map_form  {
+    position: initial;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    form .sended.hidden {
+        width: 90%;
+        margin: auto;
+    }
 }
