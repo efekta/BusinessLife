@@ -53,7 +53,6 @@ $('form').submit(function(e) {
 
 var geo_url = '';
 function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;}
-console.log('postData');
 function run_geo(geo_url){
     $.ajax({type: 'GET',url: geo_url,dataType: 'xml',
         success: function(xml) {$(xml).find('ip').each(function(){
@@ -98,24 +97,25 @@ function send_form(form) {
     // post_url = '//bflp.ru/input';
     // post_url = 'send.php';
     post_url = 'formManager.php';
-    $.ajax({
-        type: "post",
-        url: post_url,
-        data: postData + "&site=hl82",
-        dataType: "html",
-        // data: postData + "&site=forum-nalogi&land=" + formSource + "&subject=" + formSubject + "&roistat=" + roistat_visit + "&source=" + source,
-        // contentType: "application/x-www-form-urlencoded",        
-        success: function() {
-            console.log('success');
-            go_cookies(form);
-		// fbq('track', 'Lead');
-            form_sended(form_id);
-            stat(form);            
-        },
-        error: function() {
-            console.log('error');
-        }
-    });
+		console.log(postData);
+  //   $.ajax({
+  //       type: "post",
+  //       url: post_url,
+  //       data: postData + "&site=hl82",
+  //       dataType: "html",
+  //       // data: postData + "&site=forum-nalogi&land=" + formSource + "&subject=" + formSubject + "&roistat=" + roistat_visit + "&source=" + source,
+  //       // contentType: "application/x-www-form-urlencoded",        
+  //       success: function() {
+  //           console.log('success');
+  //           go_cookies(form);
+		// // fbq('track', 'Lead');
+  //           form_sended(form_id);
+  //           stat(form);            
+  //       },
+  //       error: function() {
+  //           console.log('error');
+  //       }
+  //   });
 }
 
 function form_sended(form_id) {
@@ -209,5 +209,5 @@ $(window).load(function() {
 
 $('.mybtn_close').on('click', function(event) {
 	// event.preventDefault();
-	$('div.sended.hidden').toggleClass('sended-hidden_hide ');
+	$('div.sended.hidden').toggleClass('sended-hidden_hide');
 });

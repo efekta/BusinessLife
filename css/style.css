@@ -2400,9 +2400,9 @@ section.main {
 /*
 forms
 */
-form .hidden {
+/*form .hidden {
     display: block !important;
-}
+}*/
 form {
     position: relative;
 }
