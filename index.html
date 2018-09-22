@@ -254,7 +254,7 @@
             </div>
             
             <form class="form gorizontal dark" id="necessity_form">
-                <input name="type" type="hidden" value="Форма ВАМ НЕОБХОДИМ ЭТОТ МАСТЕР-КЛАСС, ЕСЛИ">
+                <input name="type" type="hidden" value="Форма ВАМ НЕОБХОДИМ ЭТОТ МАСТЕР-КЛАСС">
                 <div class="form-row">
                     <div class="form-input">
                         <input type="text" class="form-name" name="name" placeholder="имя" required>
@@ -274,6 +274,10 @@
                     <div class="form-button">
                         <button class="button blue" type="submit" id="Форма узнать подробнее">УЗНАТЬ ПОДРОБНЕЕ</button>
                     </div>
+                </div>
+                <div class="sended hidden">
+                    <span class="sended-title sended-title_black">Благодарим за обращение!</span>
+                    <span class="sended-title_black">Мы свяжемся с вами в ближайшее время!</span>
                 </div>
             </form>
         </div>
@@ -370,6 +374,10 @@
                         <button class="button blue" type="submit" id="Форма принять участие">ПРИНЯТЬ УЧАСТИЕ</button>
                     </div>
                 </div>
+                <div class="sended hidden">
+                    <span class="sended-title">Благодарим за обращение!</span>
+                    <span class="sended-subtitle">Мы свяжемся с вами в ближайшее время!</span>
+                </div>
             </form>
         </div>
     </section>
@@ -407,6 +415,10 @@
                                 <div class="form-button">
                                     <button class="button blue" type="submit" id="Форма получить инструменты">ПОЛУЧИТЬ ИНСТРУМЕНТЫ</button>
                                 </div>
+                            </div>
+                            <div class="sended hidden">
+                                <span class="sended-title">Благодарим за обращение!</span>
+                                <span class="sended-subtitle sended-subtitle_black">Мы свяжемся с вами в ближайшее время!</span>
                             </div>
                         </form>
                         <div class="you-get">
@@ -470,7 +482,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="partners">
         <div class="container">
             <div class="title">Партнеры мероприятия</div>
@@ -585,12 +597,11 @@
                                 <div class="item-title">Гарантия эффективности при условии применения</div>
                             </li>
                         </ul>
-                </div>
+                    </div>
                     <div class="other">
                         <button class="button blue for-pres" href="#" data-toggle="modal" data-target="#get-presentation">скачать презентацию</button>
                         <img src="images/header/forpdf.png" class="fpdf">
-                    </div>
-                    
+                    </div> 
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 video-block">
                     <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/kPAIWnky1bQ?rel=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
@@ -632,6 +643,10 @@
                         <button class="button blue" type="submit" id="Форма принять участие с карты">ПРИНЯТЬ УЧАСТИЕ</button>
                     </div>
                 </div>
+                <div class="sended hidden">
+                    <span class="sended-title">Благодарим за обращение!</span>
+                    <span class="sended-subtitle">Мы свяжемся с вами в ближайшее время!</span>
+                </div>
             </form>
             <ul class="social">
                 <li class="facebook"><a target="_blank" href="https://www.facebook.com/bizlife.rnd"></a></li>
@@ -656,22 +671,18 @@
             <a href="http://www.biznlife.ru" target="_blank">www.biznlife.ru</a>
         </div>
     </footer>
-<!--     <div class="sended hidden">
-        <span class="sended-title">Благодарим за обращение!</span>
-        <span class="sended-subtitle">Мы свяжемся с вами в ближайшее время!</span>
-        <div class="mybtn_close">+</div>
-    </div> -->
+
     <div id="thanks" class="modal modal-thanks fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal"></button>
                 <div class="modal-body">
                     <div class="header">
-                        <div class="title sended-title">
+                        <div class="title">
                             СПАСИБО ЗА ОБРАЩЕНИЕ!
                         </div>
                         <hr>
-                        <div class="subtitle sended-subtitle">
+                        <div class="subtitle">
                             Наш менеджер свяжется с Вами в ближайшее время, для уточнения деталей.
                         </div>
                     </div>

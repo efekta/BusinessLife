@@ -207,7 +207,7 @@ $(window).load(function() {
     $("input.form-phone").val(getCookie("form-phone"));
 });
 
-$('.mybtn_close').on('click', function(event) {
-	// event.preventDefault();
-	$('div.sended.hidden').toggleClass('sended-hidden_hide');
-});
+// $('.mybtn_close').on('click', function(event) {
+// 	// event.preventDefault();
+// 	$('div.sended.hidden').toggleClass('sended-hidden_hide');
+// });
