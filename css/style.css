@@ -2468,3 +2468,6 @@ form .sended-hidden_hide {
         margin: auto;
     }
 }*/
+form .sended-block {
+    display: block;
+}

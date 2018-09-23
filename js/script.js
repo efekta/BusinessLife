@@ -94,28 +94,28 @@ function send_form(form) {
     }
     var formSource = encodeURIComponent("Как снизить налоги и обезопасить бизнес в 2018 году (г. Краснодар) [" + btnText + "]");
     var formSubject = encodeURIComponent(subject);
-    // post_url = '//bflp.ru/input';
-    // post_url = 'send.php';
+    post_url = '//bflp.ru/input';
+    post_url = 'send.php';
     post_url = 'formManager.php';
 		console.log(postData);
-  //   $.ajax({
-  //       type: "post",
-  //       url: post_url,
-  //       data: postData + "&site=hl82",
-  //       dataType: "html",
-  //       // data: postData + "&site=forum-nalogi&land=" + formSource + "&subject=" + formSubject + "&roistat=" + roistat_visit + "&source=" + source,
-  //       // contentType: "application/x-www-form-urlencoded",        
-  //       success: function() {
-  //           console.log('success');
-  //           go_cookies(form);
-		// // fbq('track', 'Lead');
-  //           form_sended(form_id);
-  //           stat(form);            
-  //       },
-  //       error: function() {
-  //           console.log('error');
-  //       }
-  //   });
+    $.ajax({
+        type: "post",
+        url: post_url,
+        data: postData + "&site=hl82",
+        dataType: "html",
+        // data: postData + "&site=forum-nalogi&land=" + formSource + "&subject=" + formSubject + "&roistat=" + roistat_visit + "&source=" + source,
+        // contentType: "application/x-www-form-urlencoded",        
+        success: function() {
+            console.log('success');
+            go_cookies(form);
+		// fbq('track', 'Lead');
+            form_sended(form_id);
+            stat(form);            
+        },
+        error: function() {
+            console.log('error');
+        }
+    });
 }
 
 function form_sended(form_id) {
@@ -211,3 +211,13 @@ $(window).load(function() {
 // 	// event.preventDefault();
 // 	$('div.sended.hidden').toggleClass('sended-hidden_hide');
 // });
+// $("#select-form").submit(function() {
+//         $.ajax({
+//             type: "POST",
+//             url: "mail.php",
+//             data: $(this).serialize()
+//         }).done(function() {
+//             window.location = "/thanks";
+//         });
+//         return false;
+//     });
