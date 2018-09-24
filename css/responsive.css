@@ -912,4 +912,30 @@ img {
     #program form#program-form {
         display: none;
     }
+    .modal {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #get-presentation-a.modal-thanks .modal-content, #partner-modal-a.modal-thanks .modal-content {
+        padding: 0;
+    }
+    .modal-dialog {
+        width: 100%;
+    }
+
+    #get-presentation .form.vertical .form-row .form-input,
+    #get-presentation-a .form.vertical .form-row .form-input {
+        width: 100%;
+        float: none;
+    }
+    #get-presentation .form.vertical .form-row .form-input input,
+    #get-presentation-a .form.vertical .form-row .form-input input {
+        min-width: auto;
+        width: 100%;
+    }
+    #get-presentation .form.vertical.a-box-form,
+    #get-presentation-a .form.vertical.a-box-form,
+    #partner-modal .form.vertical.a-box-form {
+        display: block;
+    }
 }
