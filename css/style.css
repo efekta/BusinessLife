@@ -2579,3 +2579,6 @@ form .sended-hidden_hide {
 .video iframe {
     border: none;
 }
+.sended-block {
+    height: auto !important;
+}
