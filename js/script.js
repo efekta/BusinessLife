@@ -126,8 +126,8 @@ function form_sended(form_id) {
     $(form_id).find('.form-buttons').hide();
     $(form_id).parent().find('.form-title').hide();
     $(form_id).parent().find('.form-subtitle').hide();
-    // $(form_id).parents('.modal-content').find('.title').hide();
-    // $(form_id).addClass('hidden');
+    $(form_id).parents('.modal-content').find('.title').hide();
+    $(form_id).addClass('hidden');
     $(form_id).height(fh).addClass('sended-block');
     $(form_id).parent().find('.sended').removeClass('hidden');
     setTimeout(function() {
