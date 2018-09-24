@@ -938,4 +938,7 @@ img {
     #partner-modal .form.vertical.a-box-form {
         display: block;
     }
+    .social {
+        margin-top: 40px;
+    }
 }
