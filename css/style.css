@@ -2235,7 +2235,7 @@ section.main {
     margin-bottom: 30px;
 }
 .main .video-block {
-    margin-top: 30px;
+    margin: 30px 0;
 }
 .main .video-block .video {
     width: 100%;
@@ -2409,27 +2409,25 @@ form {
     position: relative;
 }
 
-form .sended.hidden {
+.sended {
+    /*display: none;*/
     text-align: center;
     font-weight: bold;
     font-family: 'HelveticaNeueCyr-Light', sans-serif;
 
 }
-form .sended-title {
-    display: block;
+.sended-title {
     margin: 20px 0;
     font-size: 18px;
     color: red;
 }
-form .sended-subtitle {
-    display: block;
+.sended-subtitle {
     font-size: 14px;
     color: #fff;
     margin-bottom: 20px;
 }
-form .sended-subtitle_black {
+.sended-subtitle_black {
     color: #293038;
-    display: block;
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -2468,6 +2466,121 @@ form .sended-hidden_hide {
         margin: auto;
     }
 }*/
-form .sended-block {
-    display: block;
+.sened-block {
+    display: none;
+}
+/*#necessity_form .form-row>.form-button {
+    width: 100%;
+}*/
+#get-presentation-a.modal-thanks .modal-content, #partner-modal-a.modal-thanks .modal-content {
+    background: #dbdae5;
+    border-radius: 0;
+    padding: 0 50px;
+}
+#get-presentation-a.modal-thanks .modal-content {
+    background: #dbdae5;
+    border-radius: 0;
+}
+#get-presentation-a .modal-content, #partner-modal-a .modal-content, #discount40-modal .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+#get-presentation-a .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+#get-presentation-a .form.vertical, #partner-modal-a .form.vertical, #discount40-modal .form.vertical {
+    margin-bottom: 40px;
+}
+#get-presentation-a .form.vertical {
+    display: table;
+    width: 100%;
+}
+#get-presentation-a input, #partner-modal-a input, #discount40-modal input {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-color: #19b5fe !important;
+}
+
+#get-presentation-a input {
+    min-width: 350px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-color: #19b5fe !important;
+}
+#get-presentation-a .form.vertical .form-row .form-input, #partner-modal-a .form.vertical .form-row .form-input, #discount40-modal .form.vertical .form-row .form-input {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#get-presentation-a .form.vertical .form-row .form-input {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+}
+#get-presentation-a .form.vertical .form-row .form-input input, #partner-modal-a .form.vertical .form-row .form-input input, #discount40-modal .form.vertical .form-row .form-input input {
+    background: #fff;
+    border: 2px solid #aeaeae;
+    padding: 10px 15px;
+    font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+    font-size: 16px;
+    /* color: #959595; */
+    color: #000;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 0;
+}
+#get-presentation-a .form.vertical .form-row .form-input input {
+    background: #fff;
+    border: 2px solid #aeaeae;
+    padding: 10px 15px;
+    font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+    font-size: 16px;
+    /* color: #959595; */
+    color: #000;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 0;
+}
+#get-presentation-a input, #partner-modal-a input, #discount40-modal input {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-color: #19b5fe !important;
+}
+#get-presentation-a input {
+    min-width: 350px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-color: #19b5fe !important;
+}
+#get-presentation-a .form.vertical .form-buttons, #partner-modal-a .form.vertical .form-buttons, #discount40-modal .form.vertical .form-buttons {
+    text-align: center;
+}
+
+#get-presentation-a .form.vertical .form-buttons {
+    text-align: center;
+}
+#get-presentation-a .inside-form, #partner-modal-a .inside-form, #discount40-modal .inside-form {
+    color: #19b5fe;
+    background-color: #fff;
+}
+#get-presentation-a .inside-form {
+    color: #19b5fe;
+    background-color: #fff;
+}
+#get-presentation-a .form-row {
+    margin-bottom: 40px;
+}
+.video iframe {
+    border: none;
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .map-block {
+        display: none;
+    }
 }

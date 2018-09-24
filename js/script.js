@@ -98,6 +98,7 @@ function send_form(form) {
     post_url = 'send.php';
     post_url = 'formManager.php';
 		console.log(postData);
+		form_sended(form_id)
     $.ajax({
         type: "post",
         url: post_url,
@@ -122,10 +123,11 @@ function form_sended(form_id) {
     var fh = $(form_id).height();
     $(form_id).find('.form-input').hide();
     $(form_id).find('.form-button').hide();
+    $(form_id).find('.form-buttons').hide();
     $(form_id).parent().find('.form-title').hide();
     $(form_id).parent().find('.form-subtitle').hide();
-    $(form_id).parents('.modal-content').find('.title').hide();
-    $(form_id).addClass('hidden');
+    // $(form_id).parents('.modal-content').find('.title').hide();
+    // $(form_id).addClass('hidden');
     $(form_id).height(fh).addClass('sended-block');
     $(form_id).parent().find('.sended').removeClass('hidden');
     setTimeout(function() {
@@ -220,4 +222,4 @@ $(window).load(function() {
 //             window.location = "/thanks";
 //         });
 //         return false;
-//     });
+//});
