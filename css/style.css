@@ -2579,8 +2579,3 @@ form .sended-hidden_hide {
 .video iframe {
     border: none;
 }
-@media only screen and (max-width: 767px) and (min-width: 320px) {
-    #program-form {
-        display: none;
-    }
-}

@@ -907,3 +907,9 @@ img {
         margin-bottom: 0;
     }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    #program form#program-form {
+        display: none;
+    }
+}
