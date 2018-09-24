@@ -84,6 +84,7 @@ function validateForm(form) {
     if (err == true) return false;
 }
 
+
 function send_form(form) {
     var form_id = '#' + form;
     var postData = $('#' + form).serialize();
@@ -96,11 +97,10 @@ function send_form(form) {
     }
     var formSource = encodeURIComponent("Как снизить налоги и обезопасить бизнес в 2018 году (г. Краснодар) [" + btnText + "]");
     var formSubject = encodeURIComponent(subject);
-    post_url = '//bflp.ru/input';
-    post_url = 'send.php';
+    // post_url = '//bflp.ru/input';
+    // post_url = 'send.php';
     post_url = 'formManager.php';
-		console.log(postData);
-		// form_sended(form_id);
+		// console.log(postData);
     $.ajax({
         type: "post",
         url: post_url,
