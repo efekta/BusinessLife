@@ -112,7 +112,7 @@ function send_form(form) {
             console.log('success');
             go_cookies(form);
 		// fbq('track', 'Lead');
-            // form_sended(form_id);
+            form_sended(form_id);
             stat(form);            
         },
         error: function() {
