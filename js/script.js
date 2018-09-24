@@ -43,6 +43,8 @@ $(document).ready(function() {
           ]
         });
 });
+
+
 $('form').submit(function(e) {
     var form_id = $(this).attr('id');
     if (validateForm(form_id) == false) {} else {
@@ -98,7 +100,7 @@ function send_form(form) {
     post_url = 'send.php';
     post_url = 'formManager.php';
 		console.log(postData);
-		form_sended(form_id)
+		// form_sended(form_id);
     $.ajax({
         type: "post",
         url: post_url,
@@ -110,7 +112,7 @@ function send_form(form) {
             console.log('success');
             go_cookies(form);
 		// fbq('track', 'Lead');
-            form_sended(form_id);
+            // form_sended(form_id);
             stat(form);            
         },
         error: function() {
@@ -208,18 +210,3 @@ $(window).load(function() {
     $("input.form-email").val(getCookie("form-email"));
     $("input.form-phone").val(getCookie("form-phone"));
 });
-
-// $('.mybtn_close').on('click', function(event) {
-// 	// event.preventDefault();
-// 	$('div.sended.hidden').toggleClass('sended-hidden_hide');
-// });
-// $("#select-form").submit(function() {
-//         $.ajax({
-//             type: "POST",
-//             url: "mail.php",
-//             data: $(this).serialize()
-//         }).done(function() {
-//             window.location = "/thanks";
-//         });
-//         return false;
-//});

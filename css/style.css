@@ -2242,7 +2242,7 @@ section.main {
     height: 307px;
     margin-bottom: 30px;
     position: relative;
-    background: #000;
+    /*background: #000;*/
 }
 .main .video-block iframe {
     width: 100%;
@@ -2579,6 +2579,6 @@ form .sended-hidden_hide {
 .video iframe {
     border: none;
 }
-.sended-block {
+/*.sended-block {
     height: auto !important;
-}
+}*/
