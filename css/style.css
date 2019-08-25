@@ -2021,10 +2021,11 @@ section#partners {
       header {
         height: auto; 
       }
+      .partner {
+          margin-bottom: 30px;
+      }
   }
-   @media (max-width: 767px){
-        section#main {}
-   }
+
    @media (max-width: 575px) {
         section#main {padding-top: 30px !important;}
  }
