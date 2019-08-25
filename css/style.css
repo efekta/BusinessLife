@@ -2023,6 +2023,10 @@ section#partners {
       }
       .partner {
           margin-bottom: 30px;
+          text-align: center;
+      }
+      .partner img {
+          max-width: 80%;
       }
   }
 
